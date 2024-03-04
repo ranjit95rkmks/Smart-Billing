@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold">
+
+
+        <TextView
+            android:id="@+id/dpbs"
+            android:layout_width="207dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="সদর দপ্তর"
+            android:textAlignment="center"
+            android:textColor="@color/lavender"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toStartOf="@+id/dpbslogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/amazonDesc"
+            android:layout_width="215dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="দিনাজপুর পবিস-২"
+            android:textAlignment="center"
+            android:textColor="@color/lavender"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/dpbslogo"
+            app:layout_constraintHorizontal_bias="0.357"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dpbs" />
+
+        <ImageView
+            android:id="@+id/dpbslogo"
+            android:layout_width="123dp"
+            android:layout_height="107dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Dinajpur PBS-2"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/dpbs"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dpbslogo">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/usercard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="19dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="নাম"
+                        android:textColor="@color/lavender"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/name1"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="94dp"
+                        android:layout_marginTop="19dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="সুজন "
+                        android:textColor="@color/lavender"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="আইডি"
+                        android:textColor="@color/lavender"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/userid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/name2"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="94dp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="user id"
+                        android:textColor="@color/lavender"
+                        android:textSize="18sp"
+                        tools:text="১২৩৪৩২" />
+
+
+                    <TextView
+                        android:id="@+id/name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="80dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="পদবি"
+                        android:textColor="@color/lavender"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/name2"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="94dp"
+                        android:layout_marginTop="80dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="user id"
+                        android:textColor="@color/lavender"
+                        android:textSize="18sp"
+                        tools:text="১২৩৪৩২" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="77dp"
+                        android:layout_height="111dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="83dp"
+                        android:layout_marginBottom="18dp"
+                        android:layout_toEndOf="@+id/userid"
+                        android:adjustViewBounds="true"
+                        tools:src="@drawable/man" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/details_book"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+               >
+
+                <RelativeLayout
+                    android:id="@+id/book"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/homeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/homeImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="বই সংসুক্ত করন"
+                        android:textColor="@color/lavender"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/homeImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/addtask"
+                        />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/readingpost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/beautyName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/beautyImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="রিডিং এন্ট্রি"
+                        android:textColor="@color/lavender"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/beautyImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/entry"
+                        />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/pharmName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pharmImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="সেটিং"
+                        android:textColor="@color/lavender"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/pharmImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/configuration"
+                        />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/grocName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/grocImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="ডাটা"
+                        android:textColor="@color/lavender"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/grocImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/data"
+                         />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

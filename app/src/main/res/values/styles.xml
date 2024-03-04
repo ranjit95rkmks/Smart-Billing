@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyProgressBarTwo" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="colorButtonNormal">#f50057</item>
+        <item name="colorControlActivated">#33691e</item>
+        <item name="colorControlHighlight">#ff6d00</item>
+        <item name="android:progressDrawable">@drawable/custom_progress_horizontal</item>
+        <item name="android:minWidth">200dp</item>
+    </style>
+
+
+</resources>
