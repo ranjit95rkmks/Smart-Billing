@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="prioritylist">
+        <item> </item>
         <item>মিটার ভাঙ্গা</item>
         <item>সিল কাটা</item>
         <item>বকেয়া গ্রাহক</item>

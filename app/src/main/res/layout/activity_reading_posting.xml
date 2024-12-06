@@ -68,7 +68,6 @@
             android:layout_weight="1"
             android:padding="10dp"
             android:text="ফোনঃ"
-            android:textIsSelectable="false"
             android:textSize="16sp" />
 
         <TextView
@@ -78,7 +77,7 @@
             android:layout_weight="3"
             android:padding="10dp"
             android:text="০১৭১৯৩৭৬৩৪৭"
-            android:textIsSelectable="false"
+
             android:textSize="16sp" />
     </LinearLayout>
 
@@ -93,7 +92,7 @@
             android:layout_weight="1"
             android:padding="10dp"
             android:text="ঠিকানাঃ"
-            android:textIsSelectable="false"
+
             android:textSize="16sp" />
 
         <TextView
@@ -103,7 +102,7 @@
             android:layout_weight="3"
             android:padding="10dp"
             android:text="খয়েরবাড়ি, মাদিলাহাট, ফুলবাড়ি, দিনাজপুর"
-            android:textIsSelectable="false"
+
             android:textSize="16sp" />
     </LinearLayout>
 
@@ -121,7 +120,7 @@
             android:text="বই নং"
             android:textStyle="bold"
             android:gravity="center"
-            android:textIsSelectable="false"
+
             android:textSize="20sp" />
 
         <TextView
@@ -133,7 +132,7 @@
             android:textStyle="bold"
             android:gravity="center"
             android:text="864/3050"
-            android:textIsSelectable="false"
+
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -147,18 +146,16 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:padding="10dp"
-            android:text="বর্তমান রিডিং"
-            android:textIsSelectable="false"
+            android:text="পুর্বের রিডিং"
+
             android:textSize="16sp" />
 
-        <EditText
-            android:id="@+id/reading"
+        <TextView
+            android:id="@+id/pre_reading"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text=""
-            android:inputType="number"
-            android:hint="বর্তমান রিডিং"
+            android:text="85054"
             android:textStyle="bold"
             android:padding="10dp"
             android:textSize="20sp" />
@@ -174,18 +171,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:padding="10dp"
-            android:text="ক্রমিক নং"
+            android:text="বর্তমান রিডিং"
             android:textIsSelectable="false"
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/slno"
+            android:id="@+id/current_reading"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:text=""
             android:inputType="number"
-            android:hint="ক্রমিক নং যূুক্ত করুন"
+            android:hint="বর্তমান রিডিং যূুক্ত করুন"
             android:textStyle="bold"
             android:padding="10dp"
             android:textSize="20sp" />
@@ -196,7 +193,82 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/c"
+            android:id="@+id/sl1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Month"
+            android:textIsSelectable="false"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/bill_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:inputType="number"
+            android:hint="8"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sl2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Year"
+            android:textIsSelectable="false"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/bill_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:inputType="number"
+            android:hint="2024"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="20sp" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="মন্তব্য"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/itemsse"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/com"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
@@ -213,13 +285,23 @@
             android:entries="@array/prioritylist"
 
             />
+
+
     </LinearLayout>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="পোস্টিং"
+        android:id="@+id/btnposting"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="প্রিন্ট"
+        android:id="@+id/print"
         android:textSize="20sp"
         android:textStyle="bold" />
 

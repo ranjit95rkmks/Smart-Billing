@@ -62,7 +62,7 @@ public class Splash_Activity extends AppCompatActivity {
                // if(isConnected()){
                  //   if(!backbtnPress)
 //                    {
-                        Intent intent = new Intent(Splash_Activity.this,MainActivity.class);
+                        Intent intent = new Intent(Splash_Activity.this,LoginActivity.class);
                         startActivity(intent);
                         finish();
   //                  }

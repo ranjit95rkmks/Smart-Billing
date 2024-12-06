@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ConsumerNO">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:contentDescription="বাঙ্গালদেশ পল্লী বিদ্যুতায়ন বোর্ড"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/booknoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="বই নাম্বার"
+        android:layout_below="@id/imageView10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/accnoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/booknoc"
+        android:hint="একাউন্ট নাম্বার"
+        android:inputType="number"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="গ্রাহক অনুসন্ধান"
+        android:id="@+id/con_search"
+        android:textSize="20sp"
+        android:layout_below="@id/accnoc"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="গ্রাহকের সাবলেজার"
+        android:id="@+id/con_ledger"
+        android:layout_below="@id/con_search"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="গ্রাহক সংযুক্তকরণ"
+        android:layout_below="@id/con_ledger"
+        android:id="@+id/con_add"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

@@ -24,12 +24,10 @@ public class AccountList extends AppCompatActivity {
         setContentView(R.layout.activity_account_list);
         ListView listView;
 
-        String[] listTopics = {"1500","2510","2520","2530","3540","2245","2244","2234","2423","2434","2333","5200","2510","2520","2530","2540","2245","3444","3334","1423","41234","1333"};
+        String[] listTopics = {"1500","2510","2520","2530","3540","2245","2244","2234","2423","2434","2333","5200","2511","2521","2531","2541","2242","3445","3336","1424","4128","1333"};
 
             getSupportActionBar().setTitle("একাউন্ট নাম্বার");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
             listView = findViewById(R.id.listView);
             adapter = new ArrayAdapter<String>(AccountList.this, android.R.layout.simple_dropdown_item_1line, listTopics);
             listView.setAdapter(adapter);

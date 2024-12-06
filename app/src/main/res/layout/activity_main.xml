@@ -105,7 +105,7 @@
                         android:layout_marginStart="94dp"
                         android:layout_marginTop="19dp"
                         android:fontFamily="@font/poppins_semibold"
-                        android:text="সুজন "
+                        android:text="মোঃ সুজন মিয়া"
                         android:textColor="@color/lavender"
                         android:textSize="18sp" />
 
@@ -131,10 +131,10 @@
                         android:layout_marginStart="94dp"
                         android:layout_marginTop="50dp"
                         android:fontFamily="@font/poppins_semibold"
-                        android:text="user id"
+                        android:text="3435"
                         android:textColor="@color/lavender"
                         android:textSize="18sp"
-                        tools:text="১২৩৪৩২" />
+                         />
 
 
                     <TextView
@@ -159,10 +159,10 @@
                         android:layout_marginStart="94dp"
                         android:layout_marginTop="80dp"
                         android:fontFamily="@font/poppins_semibold"
-                        android:text="user id"
+                        android:text="মিটার রিডার"
                         android:textColor="@color/lavender"
                         android:textSize="18sp"
-                        tools:text="১২৩৪৩২" />
+                         />
 
 
                     <ImageView
@@ -218,7 +218,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/poppins_semibold"
-                        android:text="বই সংসুক্ত করন"
+                        android:text="গ্রাহক  ডাটা"
                         android:textColor="@color/lavender"
                         android:textSize="18sp" />
 

@@ -13,7 +13,7 @@
         android:layout_width="300dp"
         android:layout_marginTop="100dp"
         android:layout_height="300dp"
-        app:cardCornerRadius="150dp"
+        app:cardCornerRadius="300dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -22,7 +22,7 @@
 
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:src="@drawable/logo"
+            android:src="@drawable/breblogo"
             android:transitionName="logo_image" />
 
     </androidx.cardview.widget.CardView>
@@ -53,7 +53,7 @@
         android:alpha="0.50"
         android:fontFamily="@font/aclonica"
         android:gravity="center_horizontal"
-        android:text="Powered by .r.k.m.k.s"
+        android:text="Dinajpur PBS-2"
         android:textAlignment="center"
         android:textColor="#0277BD"
         android:textSize="18sp"

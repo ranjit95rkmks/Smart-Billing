@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="বই নাম্বার"
+
+            android:textColor="@color/lavender"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/n_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="সুজন "
+            android:textColor="@color/lavender"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/name2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:padding="10dp"-->
+<!--            android:fontFamily="@font/poppins_semibold"-->
+<!--            android:text= "গ্রাম"-->
+<!--            android:textColor="@color/lavender"-->
+<!--            android:textSize="18sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/phone"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="3"-->
+<!--            android:padding="10dp"-->
+<!--            android:fontFamily="@font/poppins_semibold"-->
+<!--            android:text="user id"-->
+<!--            android:textColor="@color/lavender"-->
+<!--            android:textSize="18sp" />-->
+<!--    </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/name22"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:padding="10dp"-->
+<!--                android:fontFamily="@font/poppins_semibold"-->
+<!--                android:text= "ঠিকানা"-->
+<!--                android:textColor="@color/lavender"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/village"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="3"-->
+<!--                android:padding="10dp"-->
+<!--                android:fontFamily="@font/poppins_semibold"-->
+<!--                android:text="user id"-->
+<!--                android:textColor="@color/lavender"-->
+<!--                android:textSize="18sp" />-->
+<!--        </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/name3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:padding="10dp"-->
+<!--            android:fontFamily="@font/poppins_semibold"-->
+<!--            android:text="গ্রাহক সংখ্যা"-->
+<!--            android:textColor="@color/lavender"-->
+<!--            android:textSize="18sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/account"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="3"-->
+<!--            android:padding="10dp"-->
+<!--            android:fontFamily="@font/poppins_semibold"-->
+<!--            android:text="user id"-->
+<!--            android:textColor="@color/lavender"-->
+<!--            android:textSize="18sp" />-->
+<!--    </LinearLayout>-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/edit_button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="সংযুক্ত করুন" />-->
+
+   </LinearLayout>
+
+</androidx.cardview.widget.CardView>
