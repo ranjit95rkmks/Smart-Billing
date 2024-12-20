@@ -1,5 +1,7 @@
 package com.example.smartbilling;
 
+import static com.example.smartbilling.accessoris.MyApiLink.WEBAPIFinal;
+
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,7 +29,8 @@ public class LoginActivity extends AppCompatActivity {
     private Button buttonLogin;
 
     String [] userData;
-    private final String WEB_API = "https://script.google.com/macros/s/AKfycbxq2EVE2P1aYvJMbrxCgFjNNUIo8b-jU2279zEEVgV3YDTslVZALxWocQLefyD8QXq5xw/exec?action=login";
+   // private final String WEB_API = "https://script.google.com/macros/s/AKfycbxq2EVE2P1aYvJMbrxCgFjNNUIo8b-jU2279zEEVgV3YDTslVZALxWocQLefyD8QXq5xw/exec?action=login";
+    private final String WEB_API = WEBAPIFinal+"action=login";
 
 
     String id, name, fname, role, village, phone, email, password;
@@ -72,18 +75,13 @@ public class LoginActivity extends AppCompatActivity {
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) throws RuntimeException {
+
+              //  ViewDialog.dataLoadingWait(LoginActivity.this, "Login processing..." ,"Please wait");
                 try {
                     JSONArray jsonArray= response.getJSONArray("items");
                     for(int i=0; i<jsonArray.length(); i++){
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
-//                        record ['id'] = row[0];
-//                        record['name']= row[1];
-//                        record['fname']= row[2];
-//                        record['book']= row[4];
-//                        record['email']= row[5];
-//                        record['phone']= row[6];
-//                        record['village']= row[7];
-//                        record['password'] = row[8];
+
                         id = jsonObject.getString("id");
                         name= jsonObject.getString("name");
                         fname= jsonObject.getString("fname");
@@ -93,7 +91,6 @@ public class LoginActivity extends AppCompatActivity {
                         village= jsonObject.getString("village");
                         password= jsonObject.getString("password");
 
-                        Log.d("joybangla", "I am hrere"+name);
 
                         Intent intent =new Intent(LoginActivity.this, MainActivity.class);
                         intent.putExtra("name", name);
@@ -122,6 +119,8 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         RequestQueue queue = Volley.newRequestQueue(this);
+
         queue.add(jsonObjectRequest);
+        ViewDialog.dataLoadingWait(LoginActivity.this, "Login processing..." ,"Please wait");
     }
 }

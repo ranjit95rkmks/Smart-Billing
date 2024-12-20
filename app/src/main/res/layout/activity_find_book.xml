@@ -14,18 +14,49 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:hint="Enter Book Title"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/etbillmonth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter Bill Month"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/etBookTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+    <EditText
+        android:id="@+id/etbillyear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter Bill Year"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/etbillmonth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
     <Button
         android:id="@+id/btnFindBook"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Find Book"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etBookTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/etbillyear" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

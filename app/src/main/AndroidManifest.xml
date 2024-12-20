@@ -16,7 +16,10 @@
         android:theme="@style/Theme.SmartBilling"
         tools:targetApi="31">
         <activity
-            android:name=".PdfGeneratorActivity"
+            android:name=".PrintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConsumerBillDetails"
             android:exported="false" />
         <activity
             android:name=".FindBookActivity"
@@ -26,9 +29,6 @@
             android:exported="false" />
         <activity
             android:name=".ConsumerDetails"
-            android:exported="false" />
-        <activity
-            android:name=".ConsumerNO"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"

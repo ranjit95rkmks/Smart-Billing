@@ -42,4 +42,13 @@ android:layout_below="@id/current_c"
 android:layout_marginTop="20dp"
 android:text="Consumer Detail Show" />
 
+    <Button
+        android:id="@+id/con_bill_laser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/con_details"
+        android:layout_marginTop="20dp"
+        android:text="Consumer laser" />
+
+
     </RelativeLayout>

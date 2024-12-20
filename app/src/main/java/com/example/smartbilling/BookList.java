@@ -1,5 +1,7 @@
 package com.example.smartbilling;
 
+import static com.example.smartbilling.accessoris.MyApiLink.WEBAPIFinal;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,6 +29,7 @@ import com.android.volley.Response.ErrorListener;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.smartbilling.accessoris.ViewDialog;
 import com.example.smartbilling.adapter.BookAdapter;
 import com.example.smartbilling.model.BookData;
 
@@ -41,7 +44,7 @@ import java.util.List;
 public class BookList extends AppCompatActivity {
 
 
-    private final String WEB_API = "https://script.google.com/macros/s/AKfycbxq2EVE2P1aYvJMbrxCgFjNNUIo8b-jU2279zEEVgV3YDTslVZALxWocQLefyD8QXq5xw/exec?action=accno";
+    private final String WEB_API = WEBAPIFinal+"action=accno";
 
     RecyclerView recyclerView;
     //ActivityBookBinding binding;
@@ -49,6 +52,8 @@ public class BookList extends AppCompatActivity {
     ArrayList<String> id, name, fname, mname, book, account,phone, village, thana, distric, tarrif, demand, entry_data, date_of_brith, status;
 
     BookAdapter bookAdapter;
+
+    String billmonth, billyear;
     ArrayList<BookData> bookData;
 
     BookData bookHolder;
@@ -61,6 +66,8 @@ public class BookList extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         String bookid = getIntent().getStringExtra("bookID");
+        billyear = getIntent().getStringExtra("billyear");
+        billmonth = getIntent().getStringExtra("billmonth");
 
         setContentView(R.layout.activity_book_list);
         recyclerView = findViewById(R.id.myview);
@@ -149,6 +156,7 @@ public class BookList extends AppCompatActivity {
 
         RequestQueue queue = Volley.newRequestQueue(this);
         queue.add(jsonObjectRequest);
+        ViewDialog.dataLoadingWait(BookList.this, "Data Processing", "Please Wait");
     }
 
     @Override
@@ -196,9 +204,9 @@ public class BookList extends AppCompatActivity {
                 iintent.putExtra("data_account", my_response.getAccount());
                 iintent.putExtra("data_phone", my_response.getPhone());
                 iintent.putExtra("data_address", my_response.getAddress());
+                iintent.putExtra("data_billyear", billyear);
+                iintent.putExtra("data_billmonth", billmonth);
                 startActivity(iintent);
-
-
             }
         });
     }

@@ -52,13 +52,6 @@ public class ConsumerDetails extends AppCompatActivity {
         Log.d("url",url);
 
         showBookData(url);
-
-
-
-
-
-
-
     }
 
     private void showBookData(String url) {
@@ -94,17 +87,7 @@ public class ConsumerDetails extends AppCompatActivity {
                        _phone.setText("Phone :"+phone);
                        _tarrif.setText("Tarrif: "+tarrif+", Status: "+ status);
 
-
-
-                        // BookData bookData = new BookData(id,name,fname, phone,book,account,village,mname);
-
-                        // bookAdapter.addModel(bookData);
-
                     }
-                    // recyclerView.setHasFixedSize(true);
-                    // RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(BookList.this);
-                    //  recyclerView.setLayoutManager(layoutManager);
-                    //  recyclerView.setAdapter(bookAdapter);
 
                 } catch (JSONException e) {
                     //throw new RuntimeException(e);
